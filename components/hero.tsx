@@ -12,10 +12,10 @@ const Hero: FC<{ content: { title: string; body: string } }> = ({ content }) => 
     >
       <Pane>
         <Heading fontSize="clamp(2rem, 8vw, 6rem)" lineHeight="clamp(2rem, 8vw, 6rem)" marginBottom={majorScale(8)}>
-          {content.title}
+          {content?.title}
         </Heading>
         <Paragraph fontSize="clamp(1.2rem, 4vw, 1.5rem)" lineHeight="clamp(1.2rem, 4vw, 2rem)">
-          {content.body}
+          {content?.body}
         </Paragraph>
       </Pane>
     </Pane>
